@@ -1,0 +1,125 @@
+/* Sass Расширения */
+%blue_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    background: var(--dark-blue);
+    height: 48px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+// Секция "Оставьте заявку"
+.leave_request {
+    display: flex;
+    gap: 20px;
+    padding: 0 250px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    min-height: 400px;
+
+    @media (max-width: 1550px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 1300px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width: 1100px) {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    @media (max-width: 500px) {
+        margin-bottom: 0;
+        margin-top: 80px;
+        min-height: 350px;
+    }
+
+    /* Форма заявления */
+    .services_form {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        background: var(--white);
+        width: 560px;
+        gap: 10px;
+        border-radius: 10px;
+        color: var(--black);
+        align-self: center;
+
+        @media (max-width: 600px) {
+            width: 100%;
+        }
+
+        @media (max-width: 500px) {
+            padding: 10px;
+        }
+
+        &--caption {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 130%;
+        }
+
+        &--desc {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 26px;
+            align-self: center;
+            width: 70%;
+            white-space: wrap;
+            margin-bottom: 30px;
+
+            @media (max-width: 400px) {
+                width: 90%;
+            }
+        }
+
+        &--input {
+            border-bottom: 1px solid var(--light-grey);
+            height: 40px;
+            width: 100%;
+            background: var(--white);
+
+            &::placeholder {
+                color: var(--dark-grey);
+                font-weight: 400;
+                font-size: 20px;
+                line-height: 130%;
+                font-family: var(--font-family);
+            }
+        }
+
+        &--button {
+            @extend %blue_button;
+            border-radius: 10px;
+            height: 50px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 24px;
+            height: 50px;
+        }
+    }
+
+    &--image {
+        border-radius: 10px;
+        height: 400px;
+        width: 60%;
+        object-fit: cover;
+        align-self: center;
+
+        @media (max-width: 1100px) {
+            height: 100%;
+            width: 90%;
+        }
+
+        @media (max-width: 500px) {
+            display: none;
+        }
+    }
+}
