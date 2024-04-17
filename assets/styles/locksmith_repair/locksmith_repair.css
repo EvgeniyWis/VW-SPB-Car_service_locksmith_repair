@@ -279,6 +279,8 @@
   margin-top: 10px;
   width: 100%;
   align-items: flex-start;
+  max-height: 100px;
+  overflow-y: auto;
 }
 .locksmith_repair__leave_request--filter_item {
   display: flex;
@@ -299,4 +301,7 @@
   font-size: 16px;
   line-height: 19.5px;
   color: #000000;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }/*# sourceMappingURL=locksmith_repair.css.map */
