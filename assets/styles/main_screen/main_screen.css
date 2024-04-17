@@ -63,4 +63,21 @@
     margin: 10px 0;
     font-size: 32px;
   }
+}
+
+/* Стили попапа */
+.popup__background {
+  display: flex;
+  position: fixed;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #060637;
+  opacity: 0;
+  transition: all 0.3s linear;
+  z-index: -1;
+}
+
+.popup__background__active {
+  opacity: 0.6;
+  z-index: 3;
 }/*# sourceMappingURL=main_screen.css.map */

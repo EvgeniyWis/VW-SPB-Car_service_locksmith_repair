@@ -122,42 +122,6 @@ select:focus-visible {
     cursor: pointer;
 }
 
-.popup__background {
-    display: flex;
-    position: fixed;
-    min-width: 100vw;
-    min-height: 100vh;
-    background-color: #060637;
-    opacity: 0;
-    transition: all .3s linear;
-    z-index: -1;
-}
-
-.popup__background__active {
-    opacity: 0.6;
-    z-index: 3;
-}
-
-
-select {
-    appearance: none;
-    -webkit-appearance: none;
-}
-
-.custom-select {
-    position: relative;
-}
-
-.custom-select::after {
-    content: url(./assets/images/other/select_menu_arrow.png);
-    display: block;
-    width: 10%;
-    height: 10%;
-    position: absolute;
-    right: 0;
-    bottom: 25px;
-}
-
 main {
     flex-grow: 1;
 }

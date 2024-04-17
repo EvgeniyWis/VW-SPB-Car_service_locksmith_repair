@@ -1,4 +1,19 @@
 @charset "UTF-8";
+/* Sass Расширения */
+.locksmith_repair__leave_request--button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: var(--dark-blue);
+  height: 52px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 24.38px;
+  font-size: 20px;
+  width: 383px;
+}
+
 /* Слесарный ремонт */
 .locksmith_repair {
   display: flex;
@@ -6,6 +21,8 @@
   margin-top: 50px;
   color: #000000;
   padding: 0 250px;
+  /* Колонка с фильтрами */
+  /* Колонка с формой*/
 }
 @media (max-width: 1550px) {
   .locksmith_repair {
@@ -26,6 +43,7 @@
   display: grid;
   grid-template-columns: 65% 35%;
   margin-top: 50px;
+  gap: 20px;
 }
 .locksmith_repair__filters {
   display: flex;
@@ -82,4 +100,125 @@
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
+}
+.locksmith_repair__leave_request {
+  display: flex;
+  flex-direction: column;
+  width: 443px;
+  height: 565px;
+  border-radius: 10px;
+  padding: 30px;
+  background-color: #FAFAFA;
+  color: #000000;
+}
+.locksmith_repair__leave_request--caption {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 31.2px;
+  text-align: center;
+}
+.locksmith_repair__leave_request--desc {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  white-space: wrap;
+  margin-top: 10px;
+}
+.locksmith_repair__leave_request--wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 30px;
+}
+.locksmith_repair__leave_request--info {
+  color: var(--dark-grey);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18.2px;
+  white-space: wrap;
+  text-align: left;
+}
+.locksmith_repair__leave_request--select {
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 25px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--dark-grey);
+}
+.locksmith_repair__leave_request .custom-select {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 1px 1px var(--light-grey);
+  position: relative;
+  height: 25px;
+  width: 100%;
+  padding: 5px;
+  background-color: transparent;
+}
+.locksmith_repair__leave_request .custom-select::after {
+  content: url(../../icons/select_menu_arrow.svg);
+  display: block;
+  width: 10%;
+  height: 200%;
+}
+.locksmith_repair__leave_request--input {
+  box-shadow: 0px 1px 1px var(--light-grey);
+  width: 383px;
+  height: 30px;
+  background-color: transparent;
+  padding: 5px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--dark-grey);
+}
+.locksmith_repair__leave_request--input::-moz-placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--dark-grey);
+}
+.locksmith_repair__leave_request--input::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: var(--dark-grey);
+}
+.locksmith_repair__leave_request--button {
+  margin-top: 15px;
+}
+.locksmith_repair__leave_request--filters {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+  width: 100%;
+  align-items: flex-start;
+}
+.locksmith_repair__leave_request--filter_item {
+  display: flex;
+  align-items: center;
+  background-color: var(--light-grey);
+  height: 28px;
+  border-radius: 5px;
+  padding: 4px 6px 4px 6px;
+  gap: 8px;
+}
+.locksmith_repair__leave_request--filter_item_cancel {
+  cursor: pointer;
+  min-width: 16px;
+  min-height: 16px;
+}
+.locksmith_repair__leave_request--filter_item_text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19.5px;
+  color: #000000;
 }/*# sourceMappingURL=locksmith_repair.css.map */
