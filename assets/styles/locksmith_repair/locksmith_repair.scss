@@ -13,6 +13,32 @@
     width: 100%;
 }
 
+%button--more {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--dark-blue);
+    line-height: 24.38px;
+
+    @extend %link_hover_effect;
+}
+
+%link_hover_effect {
+    position: relative;
+    width: fit-content;
+
+    &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        width: 100%;
+        transition: width .3s linear;
+        background-color: var(--dark-blue);
+        bottom: -5px;
+        border-radius: 10px;
+    }
+}
+
 /* Слесарный ремонт */
 .locksmith_repair {
     display: flex;
@@ -70,6 +96,10 @@
         flex-direction: column;
         gap: 15px;
 
+        @media (max-width: 600px) {
+            gap: 10px;
+        }
+
         &--item {
             display: flex;
             justify-content: space-between;
@@ -84,6 +114,7 @@
 
             @media (max-width: 600px) {
                 padding: 10px 20px 10px 15px;
+                min-height: 44px;
             }
 
             &:hover {
@@ -273,6 +304,10 @@
         &--button {
             @extend %blue_button;
             margin-top: 15px;
+
+            @media (max-width: 600px) {
+                margin-top: 0;
+            }
         }
 
         &--filters {
@@ -307,6 +342,112 @@
                 line-height: 19.5px;
                 color: #000000;
                 user-select: none;
+            }
+        }
+    }
+}
+
+/* Другие сервисы */
+.other_services {
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    color: #000000;
+    padding: 0 250px;
+    margin-bottom: 150px;
+
+    @media (max-width: 1600px) {
+        padding: 0 100px;
+    }
+
+    @media (max-width: 1300px) {
+        padding: 0 40px;
+    }
+
+    @media (max-width: 600px) {
+        padding: 0 10px;
+        margin-top: 80px;
+        margin-bottom: 100px;
+    }
+
+    &--caption {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 58.51px;
+
+        @media (max-width: 600px) {
+            font-size: 32px;
+            line-height: 39.01px;
+        }
+    }
+
+    &__items {
+        margin-top: 50px;
+        display: flex;
+
+        @media (max-width: 1200px) {
+            display: grid;
+            grid-template-columns: repeat(2, 50%);
+            gap: 30px;
+        }
+
+        @media (max-width: 700px) {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+
+        @media (max-width: 700px) {
+            margin-left: 140px;
+        }
+
+        @media (max-width: 600px) {
+            margin-left: 0px;
+        }
+
+        &--icon {
+            min-width: 32px;
+            min-height: 32px;
+        }
+
+        &--text {
+            display: flex;
+            flex-direction: column;
+
+            &_caption {
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 32.2px;
+                white-space: wrap;
+                text-align: left;
+                width: 85%;
+
+                @media (max-width: 1600px) {
+                    width: 100%;
+                }
+
+                @media (max-width: 600px) {
+                    white-space: nowrap;
+                    font-size: 20px;
+                    line-height: 26px;
+                }
+            }
+
+            &--more {
+                @extend %button--more;
+
+                &_wrapper {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    margin-top: 5%;
+
+                }
             }
         }
     }

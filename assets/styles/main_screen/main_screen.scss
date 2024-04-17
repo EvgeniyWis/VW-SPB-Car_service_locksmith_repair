@@ -39,22 +39,21 @@
         font-size: 16px;
         line-height: 19.5px;
         color: var(--dark-grey);
-        margin-top: 20px;
         display: flex;
         word-spacing: 5px;
         max-width: 100%;
         padding: 0 250px;
 
         @media (max-width: 1550px) {
-            padding: 30px 100px;
+            padding: 10px 100px;
         }
 
         @media (max-width: 1300px) {
-            padding: 30px 40px;
+            padding: 10px 40px;
         }
 
         @media (max-width: 600px) {
-            padding: 30px 10px;
+            padding: 50px 10px;
         }
     }
 

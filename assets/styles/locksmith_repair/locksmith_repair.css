@@ -14,6 +14,30 @@
   width: 100%;
 }
 
+.other_services__item--text--more {
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--dark-blue);
+  line-height: 24.38px;
+}
+
+.other_services__item--text--more {
+  position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.other_services__item--text--more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  transition: width 0.3s linear;
+  background-color: var(--dark-blue);
+  bottom: -5px;
+  border-radius: 10px;
+}
+
 /* Слесарный ремонт */
 .locksmith_repair {
   display: flex;
@@ -74,6 +98,11 @@
   flex-direction: column;
   gap: 15px;
 }
+@media (max-width: 600px) {
+  .locksmith_repair__filters {
+    gap: 10px;
+  }
+}
 .locksmith_repair__filters--item {
   display: flex;
   justify-content: space-between;
@@ -89,6 +118,7 @@
 @media (max-width: 600px) {
   .locksmith_repair__filters--item {
     padding: 10px 20px 10px 15px;
+    min-height: 44px;
   }
 }
 .locksmith_repair__filters--item:hover {
@@ -272,6 +302,11 @@
 .locksmith_repair__leave_request--button {
   margin-top: 15px;
 }
+@media (max-width: 600px) {
+  .locksmith_repair__leave_request--button {
+    margin-top: 0;
+  }
+}
 .locksmith_repair__leave_request--filters {
   display: flex;
   flex-direction: column;
@@ -304,4 +339,108 @@
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+
+/* Другие сервисы */
+.other_services {
+  display: flex;
+  flex-direction: column;
+  margin-top: 200px;
+  color: #000000;
+  padding: 0 250px;
+  margin-bottom: 150px;
+}
+@media (max-width: 1600px) {
+  .other_services {
+    padding: 0 100px;
+  }
+}
+@media (max-width: 1300px) {
+  .other_services {
+    padding: 0 40px;
+  }
+}
+@media (max-width: 600px) {
+  .other_services {
+    padding: 0 10px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+}
+.other_services--caption {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 58.51px;
+}
+@media (max-width: 600px) {
+  .other_services--caption {
+    font-size: 32px;
+    line-height: 39.01px;
+  }
+}
+.other_services__items {
+  margin-top: 50px;
+  display: flex;
+}
+@media (max-width: 1200px) {
+  .other_services__items {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    gap: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .other_services__items {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}
+.other_services__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+@media (max-width: 700px) {
+  .other_services__item {
+    margin-left: 140px;
+  }
+}
+@media (max-width: 600px) {
+  .other_services__item {
+    margin-left: 0px;
+  }
+}
+.other_services__item--icon {
+  min-width: 32px;
+  min-height: 32px;
+}
+.other_services__item--text {
+  display: flex;
+  flex-direction: column;
+}
+.other_services__item--text_caption {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32.2px;
+  white-space: wrap;
+  text-align: left;
+  width: 85%;
+}
+@media (max-width: 1600px) {
+  .other_services__item--text_caption {
+    width: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .other_services__item--text_caption {
+    white-space: nowrap;
+    font-size: 20px;
+    line-height: 26px;
+  }
+}
+.other_services__item--text--more_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 5%;
 }/*# sourceMappingURL=locksmith_repair.css.map */
