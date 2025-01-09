@@ -8,6 +8,6 @@
    1. Склонируйте данный репозиторий.
    2. Откройте файл ```index.html```
    
-Или вы можете просто зайти на [сайт](kriswis.github.io/VW-SPB-Car_service_locksmith_repair/), загруженный на Github Pages.
+Или вы можете просто зайти на [сайт](evgeniywis.github.io/VW-SPB-Car_service_locksmith_repair/), загруженный на Github Pages.
 # Макет:
 ![car_service_слесарный ремонт](https://github.com/KrisWis/VW-SPB-Car_service_locksmith_repair/assets/94256853/16f52932-f14a-4781-a2ab-12745ed3453e)
